@@ -1,0 +1,150 @@
+.index__title-slogan-wrapper
+  oh()
+  @media $mobile
+    h(35rem)
+.index
+  oh() 
+  height 86vh
+  // min-height 100vh
+  @media $mobile
+    size(100%, 571rem)
+    oh()
+
+  &__wrapper
+    margin auto
+    size(1170rem, 100%)
+    @media $mobile
+      size(325rem, 100%)
+
+  &__title
+    ff($russoOne)
+    display flex
+    flex-wrap: wrap
+
+    fontify(117rem, 400, 91%)
+    letter-spacing 0.02em
+    @media $mobile
+      font-size 35rem
+      margin 23rem 0rem 32rem 0
+
+    &-slogan
+      color $opacityFull
+      -webkit-text-stroke-width 2.1px
+      -webkit-text-stroke-color $white
+      transition: all 1s ease
+      
+    &-question
+      background -webkit-linear-gradient(45deg, #FCFEFF, #9EAFB4, #EEEEEE)
+      -webkit-background-clip text
+      -webkit-text-fill-color transparent
+      transition: all 1s ease
+      white-space: pre-wrap
+      &_grow
+        // костыль какой-то. Исправлю. Пока не ясно как
+        w(750rem)
+        @media $mobile
+          w(225rem)
+
+  &__begin
+    oh()
+    df(center, center)
+    color $white
+    ff($montserratR)
+    font-size 17rem
+    line-height 138%
+    letter-spacing -0.04em
+    h(259rem)
+
+    @media $mobile
+      justify-content start
+      h(347rem)
+      font-size 14rem
+      flex-direction: column
+
+    &-desc
+      mr(65rem)
+      w(480rem)
+
+      transform translateY(240rem)
+      opacity 0
+      animation: floatText 0.5s ease 1.2s
+      animation-fill-mode forwards
+      @media $mobile
+        margin 19rem 0rem
+        w(325rem)
+      
+  &__btn
+    ff($montserratM)
+    color $white
+    fontify( 20rem, 500, 24rem)
+    line-spacing -0.04rem
+    mr(80rem)
+    size(200rem)
+    dfv(center, center)
+    border-radius 50%
+    cursor pointer
+    background $aquaBlue
+    box-shadow 7px 14px 6px $shadow
+    transition all 0.1s ease-in-out
+    opacity 0
+    animation opacity 0.4s ease 1.3s
+    animation-fill-mode forwards
+    oh()
+    @media $mobile
+      mr(0)
+      size(120rem)
+      font-size 17rem
+
+    &-arrow
+      mt(5rem)
+      w(108rem)
+      animation arrowCircle 1.5s linear 1.3s infinite 
+      transition all 0.1s ease-in-out
+      @media $mobile
+        w(60rem)
+
+      ^[-1]:hover &
+        w(118rem)
+        @media $mobile
+          w(70rem)
+
+      
+    &:hover
+      border none
+      transform scale(110%)
+      fontify( 24rem, 500, 24rem)
+  
+  &__line
+    size(1003rem, 1px)
+    margin auto
+    background $opacityGray
+    @media $mobile
+      size(450rem, 1px)
+
+    &-wrapper
+      oh()
+      @media $mobile
+        overflow visible
+      &_top
+        position relative
+        l(440rem)
+        @media $mobile
+          l(0rem)
+
+    &_top
+      transform translateX(1600rem)
+      animation: exitOnLeft 1s ease 1.6s
+      animation-fill-mode forwards
+      @media $mobile
+        ml(102rem)
+      
+    &_center
+      mt(54rem)
+      mb(7rem)
+      ml(144rem)
+      transform translateX(2240rem)
+      animation: exitOnRight 1s ease 1.6s
+      animation-fill-mode forwards
+      @media $mobile
+        margin 0 0 0 -190rem
+  

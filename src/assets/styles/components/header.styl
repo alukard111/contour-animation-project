@@ -1,0 +1,53 @@
+.header
+  // h(100rem)
+  h(7vh)
+  margin 0 49rem
+  @media $mobile
+    h(70rem)
+    margin 0 25rem
+  
+  &__wrapper
+    w(100%)
+    h(100%)
+  
+  &__inner 
+    margin auto
+    size(100%, 100%)
+    df(center, space-between)
+    opacity 0
+    animation: opacity 0.5s ease 1.5s
+    animation-fill-mode forwards
+    @media $mobile
+      margin 0
+
+    
+    
+    
+  &__tag 
+    ml(68rem)
+    fontify(12rem, 400, 15rem)
+    ff($montserratR)
+    color $opacityGray
+    letter-spacing 0.05em
+    @media $mobile 
+      ml(0rem)
+      font-size 8rem
+  
+  &__logo-icon 
+    width 123rem
+    max-height 100%
+    h(100%)
+    
+    @media $mobile
+      width 56rem
+    
+    &_gravia
+      width 66rem
+      @media $mobile
+        width 56rem
+
+  &__tag_index
+    margin-left 704rem
+    @media $mobile 
+      margin-left 0rem
+    

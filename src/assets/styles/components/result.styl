@@ -1,0 +1,285 @@
+
+
+.result
+  size(100%, 100%)
+  oh()
+  min-height 86vh
+  position: relative
+  .result__cover_no 
+    background-image: url('/background/background0.png')
+  .result__cover_yes
+    background-image: url('/background/background1.png')
+  &__cover
+    w(100%)
+    h(750rem)
+    position: relative
+    oh()
+    background-image url('/background/background0.png')
+    background-position center
+    background-size cover
+    background-repeat no-repeat
+    background-attachment fixed
+    opacity 1
+    transition all 1.2s ease-in-out
+    animation: op 1.2s ease-in-out alternate
+    @keyframes op {
+      from {
+        transform scale(1.1)
+      }
+      to {
+        transform scale(1)
+      }
+    }
+    @media $mobile
+      size(100%, 410rem)
+      overflow visible
+      background-attachment unset
+      background-position right
+    
+  &__background-color
+    position: absolute
+    z-index 10
+    top 0
+    left 0
+    size(100%, 750rem)
+    transform: translateX(-100%)
+    // transform: 
+    background linear-gradient(to right, #0053DA, #052862)
+    transition all 1.2s ease-in-out
+    animation: backgroundShow 1.2s ease-in-out alternate
+    @keyframes backgroundShow {
+      from {
+        transform: scale(1.14) translateX(0%)
+      }
+      to {
+        transform: scale(1) translateX(-100%)
+      }
+    }
+
+    @media $mobile
+      size(100%, 410rem)
+
+  &__cover-inner
+    size(1120rem, 100%)
+    dfv(start, center)
+    ff($montserratR)
+    ml(220rem)
+    max-width 749rem
+    @media $mobile
+      display: block
+      max-width 100%
+      size(100%, 100%)
+      position relative
+      bottom -450rem
+      ml(0rem)
+      margin 0 25rem
+      
+
+  &__title
+    dfv(flex-start, space-between)
+    h(204rem)
+
+  &__title-headline
+    ff($montserratB)
+    color $gray
+    font-size 60rem
+    transition: all 1.5s ease
+    @media $mobile
+      font-size 45rem
+      color $white
+
+    &-wrapper
+      display flex
+      flex-wrap: wrap
+      size(800rem, 154rem)
+      @media $mobile
+        size(325rem, 154rem )
+
+    &-inner
+      display flex
+      align-items center
+      h(70rem)
+      oh()
+      @media $mobile
+        h(50rem)
+
+  &__title-link
+    fontify(16rem, 500, 24rem)
+    ff($montserrat)
+    letter-spacing 0.1em
+    color $aquaBlue
+    @media $mobile
+      font-size 15rem
+    
+    &-wrapper
+      oh()
+    
+    &-inner
+      animation: floatText 1s ease
+  &__desc
+    mt(24rem)
+    mb(80rem)
+    max-width 563rem
+    font-size 18rem
+    line-height 138%
+    oh()
+    @media $mobile
+      max-width 325rem
+      font-size 17rem
+    &-text
+      opacity 0
+      animation: floatText 1s ease-in-out 1s
+      animation-fill-mode forwards
+      @media $mobile
+        color $white
+
+  &__share
+    df(center, center)
+    opacity 0 
+    animation opacity 0.5s ease 2s
+    animation-fill-mode forwards
+    @media $mobile
+      flex-wrap wrap
+      justify-content start
+
+  &__share-icon
+    df(center, center)
+    mr(24rem)
+    w(57rem)
+    h(57rem)
+    border-radius 50%
+    border 1px solid $aquaBlue
+    background-image linear-gradient(white, white)
+    background-size 0% 0%
+    background-position 50% 50%
+    transition 0.3s
+    background-repeat no-repeat
+    cursor pointer
+
+  &__icon-social-network 
+    w(40%)
+    h(40%)
+    
+
+  &__start-over
+    dfv(center, space-between)
+    ml(35rem)
+    h(35rem)
+    color $aquaBlue
+    letter-spacing 0.095em
+    font-size 16rem
+    cursor pointer
+    @media $mobile
+      mt(39rem)
+      ml(0rem)
+
+  &__arrow-left
+    w(67rem)
+    animation arrowCircle 1.5s linear 1.3s infinite
+
+  &__scroll-about
+    df(flex-start, space-between)
+    mt(115rem)
+    w(368rem)
+    opacity 0 
+    cursor:pointer
+    transition: all 1s ease
+    animation opacity 0.5s ease 2.5s
+    animation-fill-mode forwards
+    @media $mobile
+      display none
+
+  &__scroll
+    font-size 16rem
+  &__scroll-arrow
+    h(26rem)
+    animation arrowCircleDown 1.5s linear 1.3s infinite
+
+  &__about-wrapper
+    pos(relative)
+    max-width 1424rem
+    margin auto
+    @media $mobile
+      top 300rem
+      // margin-top 300rem
+
+  &__footer
+    w(100%)
+    h(608rem)
+    margin auto
+    dfv(center, center)
+    user-select none
+    @media $mobile
+      // justify-content: flex-end
+      w(325rem)
+      line-height 43rem
+      h(900rem)
+    &-slogan
+      ml(144rem)
+      color $aquaBlue
+      font-size 70rem
+      ff($montserratB)	
+      @media $mobile
+        mt(270rem)
+        ml(unset)
+        font-size 35rem
+    &-text
+      color $white
+      ff($montserratM)
+      font-size 19rem
+      line-height 138%
+      letter-spacing -0.04em
+      mr(96rem)
+      @media $mobile
+        font-size 17rem
+        w(315rem)
+        mr(unset)
+        // ml(10rem)
+        mt(10rem)
+        letter-spacing unset
+      &_link
+        color $aquaBlue
+        text-decoration underline
+        cursor pointer
+        
+
+.result__share>.share>.ya-share2>.ya-share2__container>.ya-share2__list
+  display flex
+  &>.ya-share2__item_service_facebook>.ya-share2__link>.ya-share2__badge>.ya-share2__icon
+    background-image url('/icons/svg/fb.svg') 
+    background-position: center
+    background-repeat no-repeat
+    background-size: 13rem
+    @media $mobile
+      background-size: unset
+  &>.ya-share2__item_service_twitter>.ya-share2__link>.ya-share2__badge>.ya-share2__icon
+    background-image url('/icons/svg/twitter.svg')
+    background-position: center
+    background-repeat no-repeat
+    background-size: 22rem
+    @media $mobile
+      background-size: unset
+  &>.ya-share2__item_service_vkontakte>.ya-share2__link>.ya-share2__badge>.ya-share2__icon
+    background-image url('/icons/svg/vk.svg')
+    background-position: center
+    background-repeat no-repeat
+    background-size: 20rem
+    @media $mobile
+      background-size: unset
+  &>.ya-share2__item
+    df(center, center)
+    mr(24rem)
+    w(57rem)
+    h(57rem)
+    border-radius 50%
+    border 1px solid $aquaBlue
+    background-image linear-gradient(white, white)
+    background-size 0% 0%
+    background-position 50% 50%
+    transition 0.3s
+    background-repeat no-repeat
+    cursor pointer
+    &>.ya-share2__link>.ya-share2__badge
+      background: none
+    // &>.ya-share2__icon
+    //   background $aquaBlue

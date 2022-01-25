@@ -1,0 +1,27 @@
+.questions
+  w(100%)
+  position relative
+  overflow hidden
+  height 86vh
+  @media $mobile
+    height 690rem
+  &__line
+    background $aquaBlue
+    h(1px)
+
+    &_top
+      size(100%, 1px )
+    &_bottom
+      position absolute 
+      bottom 0px 
+      size(1063rem, 1px )
+      @media $mobile
+        size(193rem, 1px)
+        bottom 200rem
+  
+  &__line-shape
+    position absolute
+    border 1px solid $white
+    bottom 0px
+    size(287rem, 1px)
+    ml(928rem)

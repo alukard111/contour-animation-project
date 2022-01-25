@@ -1,0 +1,17 @@
+
+
+html
+	ff $os
+	font-size vh(1, 900)
+	@media (max-aspect-ratio: 8/5) 
+		font-size vw(1, 1600)
+	@media $mobile
+		font-size vm(1, 375)
+body
+	// oh()
+	overflow-x hidden
+
+.main
+	size(100%, 100%)
+	background linear-gradient(to right, #0053DA, #052862)
+

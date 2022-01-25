@@ -1,0 +1,52 @@
+.footer
+  margin 0 49rem
+  oh()
+  h(7vh)
+  @media $mobile
+    margin 0 25rem
+
+  &__wrapper
+    // size(100%, 114rem)
+    margin auto
+    df(center, space-between)
+    h(100%)
+    @media $mobile
+       size(100%, 114rem)
+
+		
+  &__copyright
+    ff($montserratM)
+    fontify(9rem, 500, 15rem)
+    letter-spacing -0.04em
+    color $opacityGray
+    max-width 855rem
+    @media $mobile
+      fontify(8rem, 500, 12rem)
+      w(246rem)
+  
+  &__heart-icon
+    cursor pointer
+    size(18rem, 16rem)
+    margin 10rem
+    @media $mobile
+      margin 5rem
+
+.footer__share
+  
+  display flex
+  align-items: center
+  @media $mobile
+    display block
+.footer__share>.share>.ya-share2>.ya-share2__container>.ya-share2__list
+  @media $mobile
+    display flex !important
+    flex-direction column
+    align-items: center
+  &>.ya-share2__item_service_facebook>.ya-share2__link>.ya-share2__badge
+    background none
+  &>.ya-share2__item_service_twitter>.ya-share2__link>.ya-share2__badge
+    background none
+  &>.ya-share2__item_service_vkontakte>.ya-share2__link>.ya-share2__badge
+    background none
+  &>.ya-share2__item_service_telegram>.ya-share2__link>.ya-share2__badge
+    background none

@@ -1,0 +1,220 @@
+.fade-enter-active, 
+.fade-leave-active
+	transition opacity .5s
+
+.fade-enter,
+.fade-leave-to
+	opacity 0
+
+
+.title-enter-to,
+.title-enter  {
+  transition: all 1s ease 1s;
+	transform translateY(240rem)
+}
+
+
+.numb-enter-to,
+.numb-enter {
+	// transition: all 0.3s ease;
+	// transform: translateY(-160rem);
+	animation getNumber 1s ease
+}
+
+.numb-leave,
+.numb-leave-to {
+	// transition: all 0.3s ease;
+	// transform: translateX(-160rem);	
+	animation leaveNumber 1s ease
+}
+
+@keyframes getNumber {
+	from {
+		transform: translateY(-160rem)
+	}
+	to {
+		transform: translateY(0rem)
+	}
+}
+@keyframes leaveNumber {
+	from {
+			transform: translateX(0rem);
+	}
+	to {
+			transform: translateX(-160rem);	
+	}
+}
+
+@keyframes floatText {
+	from {
+		transform translateY(240rem)
+		opacity 0
+	}
+	to {
+		transform translateY(0rem)
+		opacity 1
+	}
+}
+
+@keyframes opacity {
+	from {
+		opacity 0
+	}
+	to {
+		opacity 1
+	}
+}
+
+@keyframes exitOnLeft {
+	from {
+		transform translateX(1600rem)
+	}
+	to {
+		transform translateX(0rem)
+	}
+} 
+
+@keyframes exitOnRight {
+	from {
+		transform translateX(-2240rem)
+	}
+	to {
+		transform translateX(0rem)
+	}
+}
+
+@keyframes arrowCircle {
+	0% {
+		transform translateX(-11rem)
+	}
+	50% {
+		transform translateX(11rem)
+	}
+	100% {
+		transform translateX(-11rem)	
+	}
+} 
+
+@keyframes arrowCircleDown {
+	0% {
+		transform translateY(-8rem)
+	}
+	50% {
+		transform translateY(8rem)
+	}
+	100% {
+		transform translateY(-8rem)	
+	}
+} 
+
+@keyframes dashCooking {
+	from {
+		stroke-dashoffset: 9820;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+
+@keyframes dashCaress {
+	from {
+		stroke-dashoffset: 14354;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+
+@keyframes dashSport {
+	from {
+		stroke-dashoffset: 14354
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+@keyframes dashSocer {
+	from {
+		stroke-dashoffset: 8113
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+
+@keyframes dashWork {
+	from {
+		stroke-dashoffset: 14354;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+
+@keyframes dashSexLife {
+	from {
+		stroke-dashoffset: 8998;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+
+@keyframes dashHealth {
+	from {
+		stroke-dashoffset: 6416;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+@keyframes dashSport {
+	from {
+		stroke-dashoffset: 8962;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+@keyframes dashSportSnowboard {
+	from {
+		stroke-dashoffset: 9501;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+
+@keyframes dashLeisure {
+	from {
+		stroke-dashoffset: 5448;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+@keyframes dashLeisureCooking {
+	from {
+		stroke-dashoffset: 5839;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+@keyframes dashBusiness {
+	from {
+		stroke-dashoffset: 6036;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+@keyframes dashBusinessStartUp {
+	from {
+		stroke-dashoffset: 12353;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+} 
+

@@ -1,0 +1,203 @@
+.question
+  size(1424rem, 100%)
+  margin auto
+  
+  &__title
+    display flex
+    align-items start
+    mt(80rem)
+    @media $mobile
+      flex-direction column
+
+    &-headline
+      ff($montserratB)
+      fontify(44rem, 700, 56rem)
+      color $white
+      transition: all 1s ease
+      @media $mobile
+        fontify(26rem, 700, 37rem)
+      
+      &-wrapper
+        size(740rem, 100%)
+        display flex
+        flex-wrap wrap
+        @media $mobile
+          ml(27rem)
+          size(284rem, 100%)
+
+      &-inner
+        display flex
+        align-items center
+        h(50rem)
+        oh()
+        @media $mobile
+          h(31rem)
+
+    &-enumeration
+      display flex
+      ff($montserratR)
+      align-items flex-end
+      mr(80rem)
+      
+
+      &-big-wrapper
+        oh()
+        transition all 1s ease
+
+
+      &-big-inner
+        transition all 1s ease
+        // w(vw(130, 1600))
+        
+        
+      &-big-num
+        letter-spacing 0.1em
+        fontify(80rem, 400, 72rem)  
+        color $aquaBlue
+        transition all 1s ease
+        pl(24rem)
+        @media $mobile
+          fontify(50rem, 400, 61rem)
+
+      &-low-num
+        letter-spacing 0.1em
+        fontify(20rem, 300, 24rem)
+        color $opacityGray
+        ff($montserratR)
+        @media $mobile
+          fontify(17rem, 300, 21rem)
+
+  &__btns 
+    position absolute
+    bottom (48rem)
+    display flex
+    mt(98rem)
+    ml(160rem)
+    @media $mobile
+      mt(0rem)
+      ml(30rem)
+
+  &__btn
+    z-index 50
+    ml(48rem)
+    ff($montserratM)
+    color $white
+    fontify( 20rem, 500, 24rem)
+    line-spacing -0.04rem
+    size(338rem)
+    dfv(center, center)
+    border-radius 50%
+    border 1px solid $aquaBlue
+    cursor pointer
+    transition 0.1s ease-in-out
+    @media $mobile
+      ml(20rem)
+      size(120rem)
+      fontify( 17rem, 500, 21rem)
+    
+    &-arrow
+      position absolute
+      // margin auto
+      bottom 120rem
+      w(108rem)
+      transition all 0.1s ease-in-out
+      opacity 0
+      animation arrowCircle 1.5s linear 1.3s infinite
+      ^[-1]:hover &
+        opacity 1
+      
+      @media $mobile
+        display none
+
+    &:hover
+      border none
+      background $aquaBlue
+      box-shadow 7px 14px 6px $shadow
+  
+  
+  &__shape-wrapper
+    position absolute
+
+    bottom -95rem
+    right -90rem
+
+    &_cooking
+      bottom -92rem
+      @media $mobile
+        bottom 167rem
+        right -55rem
+
+    &_caress
+      bottom -50rem
+      right -245rem
+      @media $mobile
+        bottom 200rem
+        right -15rem
+
+    &_sport
+      bottom -7rem
+      right -530rem
+      @media $mobile
+        bottom 198rem
+        right -175rem
+    &_work
+      bottom -28rem
+      right -455rem
+      @media $mobile
+        bottom 188rem
+        right -271rem
+
+    &_sex-life
+      bottom -12rem
+      right -165rem
+      @media $mobile
+        bottom 195rem
+        right -85rem
+
+    
+
+  &__shape
+    size(850rem, 700rem)
+    
+    &_cooking
+      stroke-dasharray: 9820
+      fill: none
+      stroke: white
+      animation: dashCooking 3s linear alternate
+      @media $mobile
+        size(272rem, 242rem)
+      
+    &_caress
+      size(827rem, 700rem)
+      stroke-dasharray: 14354
+      fill: none
+      stroke: white
+      animation: dashCaress 3s linear alternate
+      @media $mobile
+        size(269rem, 198rem)
+    &_sport
+      size(1274rem, 606rem)
+      stroke-dasharray: 8113
+      fill: none
+      stroke: white
+      animation: dashSocer 3s linear alternate
+      @media $mobile
+        size(419rem, 198rem)
+    &_work
+      size(1145rem, 576rem)
+      stroke-dasharray: 14354
+      fill: none
+      stroke: white
+      animation: dashWork 3s linear alternate
+      @media $mobile
+        size(469rem, 236rem)
+      
+    &_sex-life
+      size(964rem, 564rem)
+      stroke-dasharray: 8998
+      fill: none
+      stroke: white
+      animation: dashSexLife 3s linear alternate
+      @media $mobile
+        size(338rem, 193rem)
+      

@@ -1,0 +1,359 @@
+
+.about
+  h(960rem)
+  pos(relative)
+  dfv(start, flex-end)
+
+  &__hidden
+    display: none
+  &__title
+    ml(136rem)
+    @media $mobile
+      ml(25rem)
+    &-enumeration
+      font-size 80rem
+      color $white
+      ff($montserratR)
+      @media $mobile
+        font-size 50rem
+      &-wrapper
+        oh()
+        @media $mobile
+          mb(20rem)
+      &-inner
+        animation: floatText 0.7s ease-in-out
+
+    &-headline
+      color $aquaBlue
+      font-size 70rem
+      ff($montserratB)	
+      @media $mobile
+        font-size 45rem
+      &-wrapper
+        w(100%)
+        ml(144rem)
+        oh()
+        @media $mobile
+          ml(25rem)
+
+      &-inner
+        animation: floatText 0.9s ease-in-out
+
+    &_leisure
+      ml(0rem)
+      @media $mobile
+        ml(25rem)
+        mb(105rem)
+
+    &_sport
+      mr(448rem)
+      @media $mobile
+        mb(90rem)
+
+    &_relationship
+      ml(0rem)
+      w(502rem)
+      @media $mobile
+        w(280rem)
+        mb(80rem)
+        ml(25rem)
+
+  &__desc
+    ml(372rem)
+    oh()
+    @media $mobile
+      overflow visible
+      ml(0rem)
+      margin 0rem 25rem
+
+    &-wrapper
+      opacity 0
+      animation: floatText 0.7s ease-in-out 0.9s
+      animation-fill-mode forwards
+      @media $mobile
+        mt(315rem)
+
+    &_relationship
+      ml(181rem)
+      @media $mobile
+        ml(25rem)
+
+    &_business
+      size(574rem, 360rem)
+      @media $mobile
+        size(325rem, 360rem)
+
+    &-link-relationship
+      color $aquaBlue
+      text-decoration underline
+      cursor pointer
+    
+    &_leisure
+      size(560rem, 370rem)
+      ml(640rem)
+      @media $mobile
+        ml(25rem)
+        size(325rem, 360rem)
+    
+
+  &__desc-text
+    color $white
+    ff($montserratM)
+    font-size 17rem
+    line-height 138%
+    letter-spacing -0.04em
+    w(572rem)
+    mt(67rem)
+    mb(64rem)
+    @media $mobile
+      w(325rem)
+    
+    &-href
+      cursor pointer
+      color $aquaBlue
+      text-decoration underline	
+      
+
+    &_relationship
+      w(417rem)
+      @media $mobile
+        w(325rem)
+    
+    &_sport
+      w(478rem)
+      @media $mobile
+        w(325rem)
+        mb(0rem)
+
+    &_health
+      w(448rem)
+      @media $mobile
+        w(325rem)
+        mt(130rem)
+        mb(0)
+
+
+  &__shape-box	
+    pos(absolute)
+    b(360rem)
+    r(-130rem)
+
+    &_health
+      b(56rem)
+      r(-320rem)
+      @media $mobile
+        b(645rem)
+        r(-155rem)
+    &_relationship
+      b(60rem)
+      r(-240rem)
+      @media $mobile
+        r(-45rem)
+        b(475rem)
+    
+    &_sport
+      r(0)
+      l(-112rem)
+      t(0)
+      b(-240rem)
+      @media $mobile
+        size(768rem, 432rem)
+        t(unset)
+        b(370rem)
+        l(-50rem)
+
+      &-snowboard
+        size(1166rem, 739rem)
+        l(-220rem)
+        b(60rem)
+        top revert
+        @media $mobile
+          size(686rem, 434rem)
+          b(430rem)
+          l(-80rem)
+    &_leisure
+      l(-128rem)
+      b(132rem)
+      @media $mobile
+        b(240rem)
+        l(-95rem)
+      &-cooking
+        b(80rem)
+        @media $mobile
+          b(290rem)
+          l(55rem)
+    
+    &_business
+      r(-260rem)
+      b(440rem)
+      @media $mobile
+        b(110rem)
+        r(-120rem)
+
+    
+
+
+
+  &__shape
+    size(1093rem, 100%)
+
+    &_health
+      size(895rem, 649rem)
+      stroke-dasharray: 6416
+      fill: none
+      stroke: white
+      animation: dashHealth 1.4s linear alternate
+      @media $mobile
+        size(695rem, 416rem)
+
+    &_relationship
+      size(876rem, 100%)
+      stroke-dasharray: 14354
+      fill: none
+      stroke: white
+      animation: dashCaress 1.4s linear alternate
+      @media $mobile
+        size(380rem, 279rem)
+
+    &_sport
+      size(1636rem, 100%)
+      stroke-dasharray: 8962
+      fill: none
+      stroke: white
+      animation: dashSport 1.4s linear alternate
+      @media $mobile
+        size(768rem, 432rem)
+      &-snowboard
+        size(1166rem, 739rem)
+        stroke-dasharray: 9501
+        fill: none
+        stroke: white
+        animation: dashSportSnowboard 1.4s linear alternate
+        @media $mobile
+          size(686rem, 434rem)
+
+    &_business
+      size(1135rem, 100%)
+      stroke-dasharray: 6036
+      fill: none
+      stroke: white
+      animation: dashBusiness 1.4s linear alternate
+      @media $mobile
+        size(542rem, 177rem)
+      &-start-up
+        stroke-dasharray: 12353
+        fill: none
+        stroke: white
+        animation: dashBusinessStartUp 1.4s linear alternate
+        
+    &_leisure
+      stroke-dasharray: 5448
+      fill: none
+      stroke: white
+      animation: dashLeisure 1.4s linear alternate
+      @media $mobile
+        size(799rem, 336rem)
+
+
+      &-cooking
+        size(1013rem, 100%)
+        stroke-dasharray: 5839
+        fill: none
+        stroke: white
+        animation: dashLeisureCooking 1.4s linear alternate
+        @media $mobile
+          size(529rem, 349rem)
+
+          
+  &__line
+    w(1088rem)
+    h(1px)
+    margin 0
+    background $white
+    @media $mobile
+      h(1.5px)
+      w(325rem)
+      ml(50rem)
+
+    &-business
+      @media $mobile
+        pos(absolute)
+        bottom -280rem
+
+    &-health
+      ml(376rem)
+      @media $mobile
+        ml(0rem)
+        mr(80rem)
+
+    &-business, &-sport
+      ml(376rem)
+      @media $mobile
+        ml(50rem)
+        
+    &-leisure, &-sport, &-health
+      pos(absolute)
+      b(0)
+      l(0)
+    
+    &-leisure
+      @media $mobile
+        bottom -75rem
+      
+  &_business
+    @media $mobile
+      margin-bottom 210rem
+  
+
+  &_business:before, &_health:before
+    display block 
+    content ''
+    size(504rem)
+    border 1px solid $aquaBlue
+    border-radius 50%
+    pos(absolute)
+    l(-250rem)
+    t(128rem)1
+    @media $mobile
+      display none
+  
+  &_health:before
+    t(288rem)
+    @media $mobile
+      display none
+
+  &_leisure
+    dfv(center, center)
+    @media $mobile
+      align-items: start
+      margin-bottom 100rem
+      
+
+    &:before
+      display block
+      content ''
+      size(363rem)
+      border 1px solid $aquaBlue
+      border-radius 50%
+      pos(absolute)
+      r(-192rem)
+      b(-90rem)
+      @media $mobile
+        display none
+
+  &_sport
+    dfv(flex-end, center)
+    @media $mobile
+      align-items start
+      justify-content space-around
+      h(1100rem)
+
+  &_health
+    dfv(flex-start, center)
+    @media $mobile
+      justify-content space-around
+      h(1374rem)
+
+  &_relationship
+    h(1090rem)
+  
